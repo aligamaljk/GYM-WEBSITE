@@ -1,0 +1,76 @@
+
+.plans-container{
+    margin-top: -65px;
+    padding: 0 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 65px;
+    position: relative;
+}
+.plans{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
+.plan{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--caloryCard);
+    color: #fff;
+    gap: 35px;
+    padding: 30px;
+    width: 250px;
+    transition: 0.4s;
+}
+.plan:nth-child(2){
+    background: var(--planCard);
+    transform: scale(1.1);
+}
+.plan>svg{
+    fill: var(--orange);
+    width: 30px;
+    height: 30px;
+}
+.plan>:nth-child(2){
+    font-size: 18px;
+    font-weight: bold;
+}
+.plan>:nth-child(3){
+    font-size: 50px;
+}
+.features{
+    display: flex;
+    flex-direction: column;
+}
+.feature{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.feature>img{
+    width: 20px;
+}
+.plans>:nth-child(2)>svg{
+    fill: #fff;
+}
+.plans>:nth-child(2)>button{
+    color: var(--orange);
+}
+.plans-blur-1{
+    width: 32rem;
+    height: 23rem;
+    top: 6rem;
+    left: 0;
+}
+.plans-blur-2{
+    width: 32rem;
+    height: 23rem;
+    top: 10rem;
+    right: 0;
+}
+@media screen and (max-width:768px) {
+    .plans{
+        flex-direction: column;
+    }
+}
